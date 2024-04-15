@@ -451,3 +451,50 @@ function guessa(){
     else(console.log('Wrong, try again!' + ' the answer was ' + answer))
 }
 guessa()
+
+//annonymous functions
+
+// let multiplication = function(a,b){
+//     return a * b
+// }
+// console.log(multiplication(7,10))
+
+//arrow functions 
+
+// let square = (y) => {
+//     return y * y
+// }
+// console.log(square(8))
+
+// arrow type function that finds the middle element of any string
+ 
+                                                                    // review later
+
+// let string1 = 'helloPeter'
+
+// let middle = () => {
+//     return x = string1.length / 2
+// }
+// let result = middle()
+// console.log(string1[result])
+
+//arrays
+
+// let fruit = ['apple','banana','orange']
+
+// fruit[0] = 'cherry'
+
+
+
+// //push
+
+// fruit.push('apple','kiwi')
+
+
+
+// //pop
+
+// fruit.pop()
+// console.log(fruit)
+
+//other methods
