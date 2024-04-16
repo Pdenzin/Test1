@@ -541,21 +541,56 @@
 //if it has an even number of elements remove the middle two elements 
 //return the modified array
 
-let array10 = [10,20,30,40,50,60]
+                                        // very cool
+
+// let array10 = [10,20,30,40,50,60]
 
 
-function find_middle(array){
-    let array_length = array.length
+// function find_middle(array){
+//     let array_length = array.length
 
-    if(array_length % 2 == 0){
-        middle_one = array_length/2
-        array.splice(middle_one - 1,2)
-    }
-    else{
+//     if(array_length % 2 == 0){
+//         middle_one = array_length/2
+//         array.splice(middle_one - 1,2)
+//     }
+//     else{
 
-        array.splice(array_length/2,1)
-    }
-    console.log(array)
-}
+//         array.splice(array_length/2,1)
+//     }
+//     console.log(array)
+// }
 
-find_middle(array10)
+// find_middle(array10)
+
+
+// let array15 = ["task 1", "task 2", "task 3", "task 4", "task 5","task 6"]
+
+// function removelast2(array){
+//     array.splice(array.length - 2,2)
+//     console.log(array)
+// }
+
+// removelast2(array15)
+
+// let spliceddata = array15.splice(1,2)
+
+// console.log(spliceddata)
+
+
+//write a function that removes last n element from an array using splice method
+
+// let array15 = ["task 1", "task 2", "task 3", "task 4", "task 5","task 6"]
+// n = 3
+
+
+// function removen(array,numbertoremove){
+//     array.splice(array.length - numbertoremove,numbertoremove)
+//     console.log(array)
+// }
+
+// removen(array15,n)
+
+//You have an array of colors. Write a function that replaces a specific color in the array with a new color. 
+//The function should take the array of colors, the index of the color to replace, and the new color as input, 
+//and return the modified array using the splice method.
+
