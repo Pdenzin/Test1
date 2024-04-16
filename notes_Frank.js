@@ -520,16 +520,42 @@
 
 //calculates the average of a set of arrays of numbers
 
-array1 = [1,2,3,4,5,6,7,8,234,1]
+// array1 = [1,2,3,4,5,6,7,8,234,1]
 
-let array_length = array1.length
-let j = 0
-function average(array1){
-    for(i = 0; i < array_length; i++){
-        j += array1[i]
+// let array_length = array1.length
+// let j = 0
+// function average(array1){
+//     for(i = 0; i < array_length; i++){
+//         j += array1[i]
+//     }
+//     console.log(j/array_length)
+// }
+
+// average(array1)
+
+
+//what is +=
+//add all of the values together
+
+//write a js function that removes the middle element from the array using splice if the array has an odd number of elements
+//if it has an even number of elements remove the middle two elements 
+//return the modified array
+
+let array10 = [10,20,30,40,50,60]
+
+
+function find_middle(array){
+    let array_length = array.length
+
+    if(array_length % 2 == 0){
+        middle_one = array_length/2
+        array.splice(middle_one - 1,2)
     }
-    console.log(j/array_length)
+    else{
+
+        array.splice(array_length/2,1)
+    }
+    console.log(array)
 }
 
-average(array1)
-
+find_middle(array10)
