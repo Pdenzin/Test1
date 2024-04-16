@@ -440,17 +440,17 @@
 // }
 // testprompt()
 
-// make this so I have 3 guesses  // hw
+                                        // make this so I have 3 guesses  // hw
 
-function guessa(){
-    let numbers = 0;
-    let answer = Math.floor(Math.random()*10)
-    numbers = window.prompt('Put a random number between 1 and 10')
-    let output = parseInt(numbers)
-    if(output === answer) console.log('You guessed corretly!')
-    else(console.log('Wrong, try again!' + ' the answer was ' + answer))
-}
-guessa()
+// function guessa(){
+//     let numbers = 0;
+//     let answer = Math.floor(Math.random()*10)
+//     numbers = window.prompt('Put a random number between 1 and 10')
+//     let output = parseInt(numbers)
+//     if(output === answer) console.log('You guessed corretly!')
+//     else(console.log('Wrong, try again!' + ' the answer was ' + answer))
+// }
+// guessa()
 
 //annonymous functions
 
@@ -498,3 +498,38 @@ guessa()
 // console.log(fruit)
 
 //other methods
+
+
+// let poppedvariable = fruit.pop()
+
+// console.log(poppedvariable)
+
+// console.log(fruit)
+
+// shift and unshift
+
+// let var1 = fruit.shift()
+
+// console.log(var1)
+// console.log(fruit)
+
+// let var2 = fruit.unshift('orange')
+// fruit.pop()
+// console.log(fruit)
+// console.log(fruit[2])
+
+//calculates the average of a set of arrays of numbers
+
+array1 = [1,2,3,4,5,6,7,8,234,1]
+
+let array_length = array1.length
+let j = 0
+function average(array1){
+    for(i = 0; i < array_length; i++){
+        j += array1[i]
+    }
+    console.log(j/array_length)
+}
+
+average(array1)
+
