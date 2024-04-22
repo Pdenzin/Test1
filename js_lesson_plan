@@ -11,13 +11,13 @@
 
 // WEEK 4 // Functions: // Declaring functions. // Parameters and return values. // Anonymous functions and arrow functions.
 
-// WEEK 5 // Arrays: // Creating arrays. // Accessing and modifying array elements. // Array methods: push, pop, shift, unshift, slice, splice, indexof, includes,toUppercase,toLowercase
+//WEEK 5 // Arrays: // Creating arrays. // Accessing and modifying array elements. // Array methods: push, pop, shift, unshift, slice, splice, indexof, includes,toUppercase,toLowercase
 
 // WEEK 6 // Objects: // Creating objects. // Accessing and modifying object properties. // Object methods.
 
 //WEEK 7 // Events: // Handling events (click, submit, keypress, etc.). // Event listeners. // DOM Manipulation: // Selecting elements. // Modifying HTML content, attributes, and styles. // Creating and removing elements. // Error Handling: // Using try, catch, and finally. // Understanding common JavaScript errors.
 
-//WEE 8: // Asynchronous JavaScript: // Callback functions. // Promises. // Async/await. // AJAX and Fetch API: // Making asynchronous requests to servers. // Handling responses.
+//WEEK 8: // Asynchronous JavaScript: // Callback functions. // Promises. // Async/await. // AJAX and Fetch API: // Making asynchronous requests to servers. // Handling responses.
 
 // Local Storage and Session Storage: // Storing data locally in the browser.
 

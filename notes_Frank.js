@@ -594,3 +594,80 @@
 //The function should take the array of colors, the index of the color to replace, and the new color as input, 
 //and return the modified array using the splice method.
 
+// let color_array = ['red', 'blue','green','brown','yellow']
+
+// let replace_color = 'blue'
+
+// let new_color = window.prompt('Please insert a color')
+
+// function swapcolor(old_color,new_color,array){
+//     let i = 0
+//     while(old_color !== array[i] ){
+//         i += 1
+//     }
+//     array.splice(i,1,new_color)
+    
+// }
+
+
+// swapcolor(replace_color,new_color,color_array) 
+
+// let color_array = ['red', 'blue','green','brown','yellow']
+
+// let replace_color = 'blue'
+
+// let new_color = 'jack'
+
+// function swapcolor(old_color,new_color,array){
+//     let index = array.indexOf(old_color)
+//     array[index] = new_color
+//     console.log(array)
+// }
+
+
+// swapcolor(replace_color,new_color,color_array)
+
+document.getElementById('colorButton').addEventListener('click',function(){
+    var colors = ["#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3"];
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor
+
+})
+document.getElementById('increaseText').addEventListener('click',function(){
+    let currentFontSize = window.getComputedStyle(this, null).getPropertyValue('font-size');
+let currentFontSizeNum = parseFloat(currentFontSize);
+this.style.fontSize = (currentFontSizeNum + 2) + 'px';
+})
+document.getElementById('blackButton').addEventListener('click',function(){
+    let blackColor = "#000000"
+    document.body.style.backgroundColor = blackColor
+    this.style.fontStyle = "ffffff"
+})
+
+//find out how to make the colors white when it goes black
+
+
+
+//converting arrays to strings
+
+// let array16 = ['a','b','c','d','e']
+                        
+// // console.log(array16.toString())
+
+
+//                                             //arrow type functions -- review
+
+
+// // console.log(array16.join(""))
+
+// // let result = ''
+// // for(let i = 0; i < array16.length; i++){
+// //     result += array16[i]
+// // }
+// // console.log(result)
+
+// let result2 = ''
+// for(let i = array16.length; i > 0; i--){
+//     result2 += array16.shift()
+// }
+// console.log(result2)
