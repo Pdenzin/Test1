@@ -459,6 +459,9 @@
 // }
 // console.log(multiplication(7,10))
 
+
+
+
 //arrow functions 
 
 // let square = (y) => {
@@ -477,6 +480,11 @@
 // }
 // let result = middle()
 // console.log(string1[result])
+
+
+// function middle(){
+//     return x = string1.l
+// }
 
 //arrays
 
@@ -627,22 +635,22 @@
 
 // swapcolor(replace_color,new_color,color_array)
 
-document.getElementById('colorButton').addEventListener('click',function(){
-    var colors = ["#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3"];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor
+// document.getElementById('colorButton').addEventListener('click',function(){
+//     var colors = ["#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3", "#3366FF", "#FF33EA", "#FF5733", "#33FFA3"];
+//     var randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     document.body.style.backgroundColor = randomColor
 
-})
-document.getElementById('increaseText').addEventListener('click',function(){
-    let currentFontSize = window.getComputedStyle(this, null).getPropertyValue('font-size');
-let currentFontSizeNum = parseFloat(currentFontSize);
-this.style.fontSize = (currentFontSizeNum + 2) + 'px';
-})
-document.getElementById('blackButton').addEventListener('click',function(){
-    let blackColor = "#000000"
-    document.body.style.backgroundColor = blackColor
-    this.style.fontStyle = "ffffff"
-})
+// })
+// document.getElementById('increaseText').addEventListener('click',function(){
+//     let currentFontSize = window.getComputedStyle(this, null).getPropertyValue('font-size');
+// let currentFontSizeNum = parseFloat(currentFontSize);
+// this.style.fontSize = (currentFontSizeNum + 2) + 'px';
+// })
+// document.getElementById('blackButton').addEventListener('click',function(){
+//     let blackColor = "#000000"
+//     document.body.style.backgroundColor = blackColor
+//     this.style.fontStyle = "ffffff"
+// })
 
 //find out how to make the colors white when it goes black
 
@@ -671,3 +679,76 @@ document.getElementById('blackButton').addEventListener('click',function(){
 //     result2 += array16.shift()
 // }
 // console.log(result2)
+
+//arrays continued 
+
+
+//function with foreach that prints out the name of the fruit from the first letter
+
+// let fruits = ['apple', 'banana', 'orange', 'mango', 'grape'];
+
+// let input = 'b'
+
+// function find_fruit(x,array){
+//     array.forEach(element => {
+//         let i = 0
+//         let y = element[i] 
+//         if(y != x){
+//             i += 1
+//         }
+//         else console.log(element)
+
+//     });
+// }
+
+// find_fruit(input,fruits)
+
+
+let fruits = ['apple', 'banana', 'orange', 'mango', 'grape'];
+
+let input = 'g'
+
+function find_fruit(x,array){
+    array.forEach(element => {
+        let y = element[0] 
+        if(y != x){
+        }
+        else console.log(element)
+
+    });
+}
+
+find_fruit(input,fruits)
+
+//forEach only works for arrays and objects
+
+
+//map filter sum find
+//different types of array methods
+
+
+// let fruits = ['apple', 'banana', 'orange', 'mango', 'grape'];
+
+
+// function map_fruit(array){
+//     array.map((element) => {
+//         console.log(element.toUpperCase())
+//     })
+// }
+
+// map_fruit(fruits)
+
+//filter
+
+// let fruits = ['apple', 'banana', 'orange', 'mango', 'grape'];
+
+// let input = 'banana'
+// function filter_fruit(x,array){
+//     let result = array.filter((element) => {
+        
+//         return element === input
+//     })
+//     console.log(result)
+// }
+
+// filter_fruit(input,fruits)
