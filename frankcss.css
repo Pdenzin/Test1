@@ -1,0 +1,5 @@
+body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }
+
+.box { width: 100px; height: 100px; background-color: #4CAF50; color: white; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: width 0.3s, height 0.3s; }
+
+.box.clicked { width: 150px; height: 150px; }

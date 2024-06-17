@@ -17,7 +17,8 @@
 
 //WEEK 7 // Events: // Handling events (click, submit, keypress, etc.). // Event listeners. // DOM Manipulation: // Selecting elements. // Modifying HTML content, attributes, and styles. // Creating and removing elements. // Error Handling: // Using try, catch, and finally. // Understanding common JavaScript errors.
 
-//WEEK 8: // Asynchronous JavaScript: // Callback functions. // Promises. // Async/await. // AJAX and Fetch API: // Making asynchronous requests to servers. // Handling responses.
+//WEEK 8: // Asynchronous JavaScript: // Callback functions. // Promises. // Async/await. 
+// AJAX and Fetch API: // Making asynchronous requests to servers. // Handling responses.
 
 // Local Storage and Session Storage: // Storing data locally in the browser.
 

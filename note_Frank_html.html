@@ -4,40 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="frankcss.css">
     <style>
-        body{
-            font-family:Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-            background-color: #faf8f8;
-        }
-        #colorButton{
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #blackButton{
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .clickable-text {
-font-size: 20px;
-margin-top: 20px;
-cursor: pointer;
-}
+    .hiddentext{color: transparent}
     </style>
+
+    
+
 </head>
+
 <body>
-    <h1>Click the button to change background color!</h1>
-<button id="colorButton">Change Color</button>
+    <h1>Welcome!</h1>
 
-<!-- Section to increase text size --><div class="clickable-text" id="increaseText">Click me to increase text size</div>
-<button id="blackButton">Turn Black</button>
-    <script src="notes_Frank.js"></script>
+<!-- <button id="colorButton">Change Background Color</button>
+<p id="removeParagraph">[1] Tell me, O Muse, of the man of many devices, who wandered full many ways after he had sacked the sacred citadel of Troy. Many were the men whose cities he saw and whose mind he learned, aye, and many the woes he suffered in his heart upon the sea, [5] seeking to win his own life and the return of his comrades.
+</p>
 
+<button id="deleteButton">delete text</button> -->
 
+<div id="resizable-box" class="box">Click me!</div>
 
+    <script>document.getElementById('resizable-box').addEventListener('click',function(){
+    this.classList.toggle('clicked')
+})
+
+</script>
+    
 </body>
 </html>
