@@ -1392,3 +1392,106 @@
 
 // console.log(result)
 
+//merging new modification
+
+//Create a code that add all the factors of a number e.g if arr[0]=2 then arr[2]=[1,2] and the result is 3 while arr[4]=[1,2,4] and the result should be 7
+
+// let emptyArray1 = [];
+
+// let inputNumber = 112;
+
+// function addFactors(number,array){
+//     for(i = 0; i <= number; i++){
+//       if(number % i == 0) array.push(i)
+//     }
+//   console.log(array)
+// }
+
+// addFactors(inputNumber, emptyArray1)
+
+// Create a function that calculates the sum of all lower numbers found in a simple array.
+
+// let array15 = [1,2,9,4,5,26,6,7,8,10,28];
+
+
+// let array19 = []
+
+// function sumAllLowestNumbers(array, emptyArray, final) {
+//   let lastNumber = array.length - 1;
+//   for (i = 0; i <= array.length; i++) {
+//     if (array[i] > array[i - 1] && array[i] > array[i + 1])
+//       emptyArray.push(array[i]);
+//   }
+//   if (array[0] > array[lastNumber]) emptyArray.push(array[0]);
+//   if (array[lastNumber] > array[0]) emptyArray.push(array[lastNumber]);
+
+//   if (emptyArray.length == 1) 
+//   console.log(emptyArray)
+//   else {
+//     let finalNumber = emptyArray.length - 1;
+
+//     for (j = 0; j <= emptyArray.length; j++) {
+//       if (
+//         emptyArray[j] > emptyArray[j - 1] &&
+//         emptyArray[j] > emptyArray[j + 1]
+//       )
+//         final.push(emptyArray[j]);
+//     }
+//     if (emptyArray[0] > emptyArray[finalNumber]) final.push(emptyArray[0]);
+//     if (emptyArray[finalNumber] > emptyArray[0])
+//       final.push(emptyArray[finalNumber]);
+//   }
+//   if ((final.length != 1) && (final[0]>final[1])) console.log(final[0])
+//   else console.log(final[1])
+// }
+
+// sumAllLowestNumbers(array15, array17, array19); 
+// let sum15 = 0;
+
+// for(i = 0; i < array15.length; i++){
+//   let largestNum = Math.max(...array15)
+//   if(array15[i] === largestNum) {}
+//   else sum15 = sum15 + array15[i]
+// }
+// console.log(sum15)
+
+
+
+
+// let inputwt = 'white';
+
+// function printWT(input){
+//     let switchW = false;
+//     let switchT = false;
+//     for(i = 0; i < input.length; i++){
+//       if(input[i] == 'w') switchW = true;
+//       if(input[i] == 't') switchT = true;
+//     }
+//     if (switchT && switchW == true) console.log(input)
+// }
+
+// printWT(inputwt)
+
+//MI function
+
+// let inputMI = 'mintmintmintmicrophonemom';
+// let arrayMI = [];
+// let outputMI = '';
+
+// function printMI(input,array,output){
+//     for(i = 0; i < input.length; i++){
+//       if(input[i] == 'm' && input[i + 1] == 'i'){
+//         array.push(i);
+//         array.push(i + 1);
+//       };
+//     }
+//     var arrayPosition = 0;
+//     for(j = 0; j < input.length; j++){
+//       if(j == array[arrayPosition]) arrayPosition += 1
+//       else output += input[j]
+//       }
+//     console.log(output)
+//     }
+
+// printMI(inputMI,arrayMI,outputMI)
+

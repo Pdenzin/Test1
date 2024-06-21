@@ -1,7 +1,2 @@
-for(i = 0; i < 3; i++){
-    const key = Object.keys(newObject1.course.instructor.contact);
-    const value = Object.values(newObject1.course.instructor.contact);
-
-    if(key[i] == 'email') console.log(value[i])
-    else console.log('-')
-}
+    // if (array[0] > array[lastNumber]) emptyArray.push(array[0])
+      // if (array[lastNumber] > array[0]) emptyArray.push(array[lastNumber])
