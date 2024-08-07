@@ -1339,7 +1339,6 @@
 //   },
 // ];
 
-
 // let z = 0;
 // let y = 0;
 
@@ -1369,14 +1368,11 @@
 // let avg1 = z/(y + 1)
 // console.log(avg1)
 
-
 // let salary = []
 // let result = users1.filter((element) => {
 //   if(element.salaryPerMonth) {salary.push(element.salaryPerMonth)}
 //   })
 // console.log(salary)
-
-
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -1413,7 +1409,6 @@
 
 // let array15 = [1,2,9,4,5,26,6,7,8,10,28];
 
-
 // let array19 = []
 
 // function sumAllLowestNumbers(array, emptyArray, final) {
@@ -1425,7 +1420,7 @@
 //   if (array[0] > array[lastNumber]) emptyArray.push(array[0]);
 //   if (array[lastNumber] > array[0]) emptyArray.push(array[lastNumber]);
 
-//   if (emptyArray.length == 1) 
+//   if (emptyArray.length == 1)
 //   console.log(emptyArray)
 //   else {
 //     let finalNumber = emptyArray.length - 1;
@@ -1445,7 +1440,7 @@
 //   else console.log(final[1])
 // }
 
-// sumAllLowestNumbers(array15, array17, array19); 
+// sumAllLowestNumbers(array15, array17, array19);
 // let sum15 = 0;
 
 // for(i = 0; i < array15.length; i++){
@@ -1454,9 +1449,6 @@
 //   else sum15 = sum15 + array15[i]
 // }
 // console.log(sum15)
-
-
-
 
 // let inputwt = 'white';
 
@@ -1495,3 +1487,746 @@
 
 // printMI(inputMI,arrayMI,outputMI)
 
+// let array20 = [1, 20, 35, 34, 32, 2];
+
+// let result = array20.sort((a,b) => a - b)
+// console.log(result[0],result[1])
+
+//Create a function that displays the fifth largest and forth smallest number in an array.
+
+// let array21 = [1,2,3,4,5,27,7,8,9];
+
+// let result = array21.sort((a,b) => a - b)
+
+// console.log(result[result.length - 5],result[3])
+
+//The sum of three numbers is two times their remainder, create a code that solves this problem
+
+// function findSol(){
+//   for(i = 1; i <= 100; i++){
+//     for(a = 1; a <= 100; a++){
+//       for(b = 1; b <= 100; b++){
+//         let sumofi = i + a + b;
+//         for(j = 0; j <= 100; j++){
+//           if((sumofi % j) * 2 == sumofi){
+//             console.log(i,a,b,j)
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// findSol() works
+
+// function myEquation(num1, num2, num3, divisor) {
+//   let sum = num1 + num2 + num3;
+//   let remainder = sum % divisor;
+//   if (sum === 2 * remainder) { return true; }
+//   else { return false; }
+// } works
+
+// console.log(myEquation(5,8,11,6)) does not work
+
+//roman numeral converter 1-50
+
+// let romanArray = [25, 3, 44];
+
+// function convertRoman(array){
+//   let x = array[0];
+//   let y = array[1];
+//   let z = array[2];
+
+//   let arrayLatin = [
+//     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+//     22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+//     41, 42, 43, 44, 45, 46, 47, 48, 49, 50,];
+//   let arrayRoman = [
+//     "I",
+//     "II",
+//     "III",
+//     "IV",
+//     "V",
+//     "VI",
+//     "VII",
+//     "VIII",
+//     "IX",
+//     "X",
+//     "XI",
+//     "XII",
+//     "XIII",
+//     "XIV",
+//     "XV",
+//     "XVI",
+//     "XVII",
+//     "XVIII",
+//     "XIX",
+//     "XX",
+//     "XXI",
+//     "XXII",
+//     "XXIII",
+//     "XXIV",
+//     "XXV",
+//     "XXVI",
+//     "XXVII",
+//     "XXVIII",
+//     "XXIX",
+//     "XXX",
+//     "XXXI",
+//     "XXXII",
+//     "XXXIII",
+//     "XXXIV",
+//     "XXXV",
+//     "XXXVI",
+//     "XXXVII",
+//     "XXXVIII",
+//     "XXXIX",
+//     "XL",
+//     "XLI",
+//     "XLII",
+//     "XLIII",
+//     "XLIV",
+//     "XLV",
+//     "XLVI",
+//     "XLVII",
+//     "XLVIII",
+//     "XLIX",
+//     "L",
+//   ];
+//   for(i = 0; i < arrayLatin.length; i++){
+//     if(x == arrayLatin[i]) console.log(arrayRoman[i]);
+//     if(y == arrayLatin[i]) console.log(arrayRoman[i]);
+//     if(z == arrayLatin[i]) console.log(arrayRoman[i]);
+//   }
+// }
+
+// convertRoman(romanArray)
+
+//by next week fetch api and json, warming up toward tensorflow and a bit of advanced js before ts in full
+
+// //replace all duplicate
+
+// let toBeReplaced = 'dog';
+
+// let replacer = 'cat';
+
+// let sentence = 'my dog is bigger than your dog';
+
+// function replaceAll2(x,y,z){
+
+//   let lengX = x.length;
+//   let lengY = y.length;
+//   let lengZ = z.length;
+
+//   let array1 = []
+//   let array2 = []
+
+//   for(i = 0; i < lengZ; i++){
+//     for(j = 1; j < lengX; j++){
+//       console.log()
+//       if (x[i] == z[i] && x[i + 1] == z[i + 1] && x[i + 2] == z[i + 2]){
+//         console.log('1')
+//       }
+
+//     }
+//   }
+
+// }
+
+// replaceAll2(toBeReplaced,replacer,sentence)
+// let x = 'x'
+// let i = 'i'
+// let ifForm = null;
+// for(j = 0; j < 2; j++){
+//   ifForm += `&& ${ x[i + j]}`
+// }
+// console.log(ifForm)
+
+// fForm += ` && ${x[Number(i) + Number(j)]} == ${z[Number(i) + Number(j)]} `;
+
+//almost working
+
+// let inputMI = 'my doger is bigger than your doger';
+// let arrayMI = [];
+// let outputMI = '';
+
+// let toBeReplacedMI = 'dogr'
+// let replacerMI = 'gatr'
+
+// let ifStatei = ` input[i + h] == x[h] `;
+// let ififif = '';
+// let ifcounter = 0;
+
+// function printMI(input,array,output,x,y){
+//   for (h = 1; h <= x.length; h++) {
+//     if (ifcounter != 0) ififif += " && ";
+//     ififif += ifStatei;
+//     ifcounter += 1;
+//   }
+//   for(i = 0; i < input.length; i++){
+//       if(input[i] == x[0] && ifStatei){
+//         let q1 = ''
+//         for(q = 0; q < x.length; q++)
+//         q1 += ` ${(i + q)} `;
+//       };
+//   array.push(i,q1);
+//     }
+//     var arrayPosition = 0;
+//     let replacerPosition = 0
+//     for(j = 0; j < input.length; j++){
+//       if (replacerPosition == y.length) replacerPosition = 0;
+//       if(j == array[arrayPosition]){
+//         arrayPosition += 1;
+//         output += y[replacerPosition];
+//         replacerPosition += 1;
+//       }
+//       else output += input[j]
+//       }
+//     console.log(output)
+//     console.log(array)
+//     }
+
+// printMI(inputMI,arrayMI,outputMI, toBeReplacedMI, replacerMI)
+
+//working version
+
+// let inputMI = "Tom is older than Pat";
+// let arrayMI = [];
+// let outputMI = "";
+
+// let toBeReplacedMI = "Tom";
+// let replacerMI = "Pat";
+
+// function printMI(input, array, output, x, y) {
+//   for (i = 0; i < input.length; i++) {
+//     if (input[i] == x[0] && input[i + 1] == x[1] && input[i + 2] == x[2]) {
+//       array.push(i);
+//       array.push(i + 1);
+//       array.push(i + 2);
+//     }
+//   }
+//   var arrayPosition = 0;
+//   let replacerPosition = 0;
+//   for (j = 0; j < input.length; j++) {
+//     if (replacerPosition == y.length) replacerPosition = 0;
+//     if (j == array[arrayPosition]) {
+//       arrayPosition += 1;
+//       output += y[replacerPosition];
+//       replacerPosition += 1;
+//     } else output += input[j];
+//   }
+//   console.log(output);
+// }
+
+// printMI(inputMI, arrayMI, outputMI, toBeReplacedMI, replacerMI);
+
+//frank's elegant solution -- substring
+
+// function replaceAll(str, search, replacement) {
+//   let result = "";
+
+//   // Loop through the string using a for loop
+//   for (let i = 0; i < str.length; ) {
+//     // Check if the substring at the current position matches the search string
+//     if (str.substring(i, i + search.length) === search) {
+//       // If it matches, append the replacement string to the result
+//       result += replacement;
+//       // Move the index forward by the length of the search string
+//       i += search.length;
+//     } else {
+//       // If it doesn't match, append the current character to the result
+//       result += str[i];
+//       // Move the index forward by 1
+//       i++;
+//     }
+//   }
+
+//   return result;
+// }
+// let originalString = "Hello world cat! Hello cat everyone!";
+// let searchString = "cat";
+// let replacementString = "dog";
+
+// let newString = replaceAll(originalString, searchString, replacementString);
+// console.log(newString);
+
+// let newstring = "hello world, how are you"
+
+// console.log(newstring.substring(6))
+
+//how many floors in the building
+
+// let buildingHeight = 20;
+// let heightPerFloor = 5;
+
+// function solveFloorsInBuilding(x,y){
+//   let result = 0;
+
+//   result = x / y;
+
+//   console.log(`The building is ${result} stories high.`)
+// }
+
+// solveFloorsInBuilding(buildingHeight,heightPerFloor)
+
+// let nairaDollar = 0.00065;
+// let yenDollar = 0.0062;
+// let rubleDollar = 0.012;
+// let yuanDollar = 0.14;
+// let euroDollar = 1.07;
+
+// let currencyArray = [0.00065, 0.0062, 0.012, 0.14, 1.07];
+// let nameArray = ['Naira','Yen','Ruble','Yuan','Euro']
+
+// let dollar = 1;
+// let numofdollars = 0;
+
+// function convertCurrency(x,name){
+//     let result = 0;
+//     for(i = 0; i < currencyArray.length; i++){
+//       if(name == nameArray[i]) result = x * currencyArray[i]
+//     }
+//     console.log(`25 ${name} is $${result} in usd`)
+// }
+// convertCurrency(25,'Yen')
+
+// let array22 = [1,2,3,4,5,6,7,5,5,5,5,58,9,10];
+// let array23 = [];
+// let array24 = [];
+
+// function splice2(w,y,location,z){
+//   for(i = 0; i < w.length; i++){
+//     if(w[i] == location){
+//       for(j = 0; j < i; j++){
+//         y.push(w[j])
+//       }
+//       for (d = 1; d < location; d++) {
+//         z.push(w[d - 1]);
+//       }
+//       for (h = location + 1; h <= w.length; h++) {
+//         z.push(w[h - 1]);
+//       }
+//     }
+//   }
+//   console.log(z)
+// }
+// splice2(array22,array23,3,array24)
+
+// let array22 = [1,2,3,4,5,6,7,5,5,5,5,5,5,5,58,9,10];
+// let array23 = [];
+// let array24 = [];
+
+// function splice2(w,y,location,z){
+//   for(i = 0; i < w.length; i++){
+//     if(w[i] == w[location]){
+//       for(j = 0; j < i; j++){
+//         y.push(w[j])
+//       }
+//        for (h = w[location]; h <= w.length; h++) {
+//         z.push(w[h - 1]);
+//       }
+//       break;
+//     }
+//   }
+//   console.log(z)
+// }
+// splice2(array22,array23,5,array24)
+
+//splicing with a string isntead of array
+
+// let string22 = '123456789'
+// let string23 = '';
+// let string24 = '';
+
+// function splice2(w, y, location, z) {
+//   for (i = 0; i < w.length; i++) {
+//     if (w[i] == w[location]) {
+//       for (j = 0; j < i; j++) {
+//         y += (w[j]);
+//       }
+//       for (h = w[location]; h <= w.length; h++) {
+//         z += (w[h - 1]);
+//       }
+//       break;
+//     }
+//   }
+//   console.log(z);
+// }
+// splice2(string22, string23, 7, string24);
+
+// let alphabetLower = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "e",
+//   "f",
+//   "g",
+//   "h",
+//   "i",
+//   "j",
+//   "k",
+//   "l",
+//   "m",
+//   "n",
+//   "o",
+//   "p",
+//   "q",
+//   "r",
+//   "s",
+//   "t",
+//   "u",
+//   "v",
+//   "w",
+//   "x",
+//   "y",
+//   "z",
+// ];
+
+// let alphabetUpper = [
+//   "A",
+//   "B",
+//   "C",
+//   "D",
+//   "E",
+//   "F",
+//   "G",
+//   "H",
+//   "I",
+//   "J",
+//   "K",
+//   "L",
+//   "M",
+//   "N",
+//   "O",
+//   "P",
+//   "Q",
+//   "R",
+//   "S",
+//   "T",
+//   "U",
+//   "V",
+//   "W",
+//   "X",
+//   "Y",
+//   "Z",
+// ];
+
+// // let counter = 0;
+
+// // function countCamel(x){
+// //   for(i = 0; i < x.length; i++){
+// //     for(j = 0; j < alphabetLower.length; j++){
+// //       if(x[i] == alphabetUpper[j]) counter += 1;
+// //     }
+// //   }
+// //   console.log(counter)
+// // }
+
+// // countCamel('dfsad;fjal;jDDDDj;alskjeiJ dlkjKKfjf')
+
+// //tensor flow json
+
+// //asyncronous js
+
+// //Parsing camelcase
+
+// let input3 = "fork";
+
+// function printonlycamel(x,y,z){
+//     let printswitch = false;
+//     for(i = 0; i < x.length; i++){
+//         if(i != 0) {
+//             for(j = 0; j < y.length; j++){
+//                 if(x[i] == y[j]){
+//                     for(k = 0; k < z.length; k++){
+//                         if(x[i - 1] == z[k]){
+//                             printswitch = true;
+//                             break;
+//                         }
+//                     }
+//                 }
+//             }
+//             for(a = 0; a < z.length; a++){
+//                 if(x[i] == z[a]){
+//                     for(b = 0; b < z.length; b++){
+//                         if(x[i - 1] == y[b]){
+//                             printswitch = true;
+//                             break;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     if(printswitch == true) console.log(x)
+// }
+
+// printonlycamel(input3,alphabetLower,alphabetUpper)
+
+// let array25 = [1,2,3,4,5,6,7];
+// let array26 = [3,4,5,6,7,8,9];
+// let array27 = [];
+
+// function onlyonearray(array1,array2,array3){
+//     array1.forEach((element) => {
+//         if(array2.includes(element));
+//         else array3.push(element);
+//     });
+//    array2.forEach((element) => {
+//         if(array1.includes(element));
+//         else array3.push(element);
+//    });
+//     console.log(array3)
+// }
+
+// onlyonearray(array25,array26,array27)
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25 },
+//   { id: 2, name: "Bob", age: 30 },
+//   { id: 3, name: "Charlie", age: 25 },
+//   { id: 4, name: "David", age: 30 },
+//   { id: 5, name: "Eve", age: 35 },
+// ];
+
+// function groupByAge(array) {
+//   let outputArray = [];
+//   array.forEach((element) => {
+//     if (outputArray.includes(element.age)) {
+//       let index = outputArray.indexOf(element.age);
+//       outputArray.splice(index + 1, 0, element.name);
+//       index = 0;
+//     } else outputArray.push(element.age, element.name);
+//   });
+//   console.log(outputArray);
+// }
+
+// groupByAge(users);
+
+// ?? you need to use .key and stuff for objects
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25 },
+//   { id: 2, name: "Bob", age: 30 },
+//   { id: 3, name: "Charlie", age: 25 },
+//   { id: 4, name: "David", age: 30 },
+//   { id: 5, name: "Eve", age: 35 },
+// ];
+
+// function groupByAge(array) {
+//   let outputObject = {};
+//   let outputArray = [];
+//   let indexArray = [];
+//   array.forEach((element) => {
+//     if (outputArray.includes(element.age));
+//     else outputArray.push(element.age);
+//   });
+//   array.forEach((x) => {
+//     let index = outputArray.indexOf(x.age);
+//     indexArray.push(x.age);
+//   });
+//   indexArray.map((element2) => {
+//     outputObject[element2] = array.name;
+//   });
+
+//   //     if (x.age == outputArray[index])
+//   //       outputArray.map((element2) => {
+//   //         outputObject[element2] = x.name;
+//   //         console.log(x.name);
+//   //       });
+//   //   });
+
+//   console.log(outputObject);
+// }
+
+// groupByAge(users);
+
+// outputArray.map((element2) => {
+//   if (x.age === outputArray[index]) outputObject[element2] = x.name;
+
+// let result222 = [25, 30, 35];
+// let object333 = {};
+
+// result222.map((element) => {
+//   object333[element] = "then";
+// });
+
+// console.log(object333);
+
+// function groupByAge(users) {
+//   let outputObject = {};
+//   let outputArray = [];
+//   let indexArray = [];
+//   array.forEach((element) => {
+//     if (outputArray.includes(element.age));
+//     else outputArray.push(element.age);
+//   });
+//   outputArray.forEach((element2) => {});
+
+//   console.log(outputObject, outputArray);
+// }
+
+// groupByAge(users);
+
+// function groupByAge2(users) {
+//   return users.reduce((acc, users) => {
+//     const age = users.age;
+//     if (!acc[age]) acc[age] = { names: [], count: 0 };
+//     acc[age].names.push(users.name);
+//     acc[age].count++;
+//     return acc;
+//   }, {});
+// }
+// console.log(groupByAge2(users));
+
+// function solution(users) {
+//   const result = {};
+
+//   users.forEach((user) => {
+//     const age = user.age;
+//     if (!result[age]) {
+//       result[age] = { names: [], count: 0 };
+//     }
+//     result[age].names.push(user.name);
+//     result[age].count++;
+//   });
+
+//   return result;
+// }
+
+// console.log(solution(users));
+
+// let alphabetLower = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "e",
+//   "f",
+//   "g",
+//   "h",
+//   "i",
+//   "j",
+//   "k",
+//   "l",
+//   "m",
+//   "n",
+//   "o",
+//   "p",
+//   "q",
+//   "r",
+//   "s",
+//   "t",
+//   "u",
+//   "v",
+//   "w",
+//   "x",
+//   "y",
+//   "z",
+// ];
+
+// let alphabetUpper = [
+//   "A",
+//   "B",
+//   "C",
+//   "D",
+//   "E",
+//   "F",
+//   "G",
+//   "H",
+//   "I",
+//   "J",
+//   "K",
+//   "L",
+//   "M",
+//   "N",
+//   "O",
+//   "P",
+//   "Q",
+//   "R",
+//   "S",
+//   "T",
+//   "U",
+//   "V",
+//   "W",
+//   "X",
+//   "Y",
+//   "Z",
+// ];
+
+// theWord = "BananaAAA";
+
+// function startsEndsWithUpper(x, y) {
+//   let finalLetter = x.length - 1;
+//   let breaker1 = false;
+//   let breaker2 = false;
+//   for (i = 0; i < y.length; i++) {
+//     if (x[0] !== y[i]) {
+//     } else {
+//       breaker1 = true;
+//     }
+//   }
+//   for (j = 0; j < y.length; j++) {
+//     if (x[finalLetter] !== y[j]) {
+//     } else {
+//       breaker2 = true;
+//     }
+//   }
+//   if (breaker1 == true && breaker2 == true) console.log(x);
+//   else console.log("the word does not begin and end witha capital");
+// }
+
+// startsEndsWithUpper(theWord, alphabetUpper);
+
+// smarter better solution
+// const voidTypeFunction=(word)=>{
+//     if(word[0]===word[0].toUpperCase() && word[word.length-1]===word[word.length-1].toUpperCase()) console.log("pass")
+//     else console.log("reject")
+//     }
+
+//     voidTypeFunction("HellO")
+
+// const myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     const success = true;
+//     if (success) resolve("operation was successful");
+//     else reject("operation failed");
+//   }, 2000);
+// });
+
+// myPromise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+// function fetchData() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("fetched data successful");
+//     }, 1000);
+//   });
+// }
+
+// function processData(data) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(data.toUpperCase());
+//     }, 1000);
+//   });
+// }
+
+// fetchData()
+//   .then((data) => {
+//     console.log(data);
+//     return processData(data);
+//   })
+//   .then((processData) => {
+//     console.log(processData);
+//   })
+//   .catch((error) => {
+//     console.error("error: ", error);
+//   });

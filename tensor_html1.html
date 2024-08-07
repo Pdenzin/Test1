@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  </head>
+  <body>
+    <h1>Tensor Operations with TensorFlow.js</h1>
+    <button onclick="performanceOperations()">perform tensor operations</button>
+    <p id="addition-result"></p>
+    <p id="subtraction-rusult"></p>
+    <p id="multiplication-result"></p>
+    <p id="division-result"></p>
+    <p id="maximum-result"></p>
+    <p id="mean-result"></p>
+    <script>
+      function performanceOperations() {
+        const tensorA = tf.tensor([1, 2, 3]);
+        const tensorB = tf.tensor([4, 5, 6]);
+        const additionResult = tf.add(tensorA, tensorB);
+        const subtractionResult = tf.sub(tensorA, tensorB);
+        const multiplicationResult = tf.mul(tensorA, tensorB);
+        const divisionResult = tf.div(tensorA, tensorB);
+
+        const matrixA = tf.tensor2d([
+          [1, 2],
+          [3, 4],
+        ]);
+        const matrixB = tf.tensor2d([
+          [5, 6],
+          [7, 8],
+        ]);
+        const maximumResult = tf.maximum(tensorA, tensorB);
+        const meanResult = tf.mean(tensorA);
+
+        additionResult.array().then((result) => {
+          document.getElementById(
+            "addition-result"
+          ).textContent = `additionResult: [${result}]`;
+        });
+        subtractionResult.array().then((result) => {
+          document.getElementById(
+            "subtraction-result"
+          ).textContent = `subtractionResult: [${result}]`;
+        });
+        multiplicationResult.array().then((result) => {
+          document.getElementById(
+            "multiplication-result"
+          ).textContent = `multiplicationResult: [${result}]`;
+        });
+        divisionResult.array().then((result) => {
+          document.getElementById(
+            "division-result"
+          ).textContent = `divisionResult: [${result}]`;
+        });
+        maximumResult.array().then((result) => {
+          document.getElementById(
+            "maximum-result"
+          ).textContent = `mainResult: [${result}]`;
+        });
+        meanResult.array().then((result) => {
+          document.getElementById(
+            "mean-result"
+          ).textContent = `meanResult: [${result}]`;
+        });
+      }
+    </script>
+  </body>
+</html>

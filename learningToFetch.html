@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>try catch example</h1>
+    <div id="result"></div>
+    <script>
+        const jsonstring = '{"name": "John", "age": 30}';
+        const invalidjsonstring = '{"name": "John", "age": 30';
+        try{
+            const user = JSON.parse(jsonstring);
+            console.log(user);
+            document.getElementById("result").innerText = `User name is ${user.name}, age is ${user.age}`;
+        } catch(error){
+            console.error('failed to parse json',error);
+            document.getElementById('result').innerText = 'Failed to parse JSON. Please check the console for more details.';
+        }
+    </script>
+</body>
+</html>
