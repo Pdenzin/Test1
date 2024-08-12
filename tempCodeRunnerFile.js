@@ -1,1 +1,1 @@
-  console.log({ ...outputArray });
+01000001

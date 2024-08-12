@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="fetchnumberbutton">Fetch Random Number</button>
+    <div id="output"></div>
+    <script>
+      function fetchRandomNumber() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(Math.floor(Math.random() * 100));
+          }, 2000);
+        });
+      }
+      async function displayRandomNumber() {
+        try {
+          const number = await fetchRandomNumber();
+          document.getElementById(
+            "output"
+          ).textContent = `Random Number: ${number}`;
+          console.log(`Random Number: ${number}`);
+        } catch (error) {
+          console.error("error", error);
+        }
+      }
+      document
+        .getElementById("fetchnumberbutton")
+        .addEventListener("click", displayRandomNumber);
+    </script>
+  </body>
+</html>

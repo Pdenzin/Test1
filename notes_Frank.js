@@ -2230,3 +2230,52 @@
 //   .catch((error) => {
 //     console.error("error: ", error);
 //   });
+
+// let vowels = ["a", "e", "i", "o", "u"];
+
+// let piglatinWord = "braragraphs";
+
+// function piglatinate(word, y) {
+//   let prefix = "";
+//   let wordlength = word.length;
+//   let newWord = "";
+//   for (i = 0; i < y.length; i++) {
+//     if (word[0] != y[i]) {
+//       prefix += word[0];
+//       for (j = 0; j < y.length; j++) {
+//         if (word[1] != y[i]) {
+//           prefix += word[1];
+//           break;
+//         } else break;
+//       }
+//       newWord += word[1] - [wordlength];
+//       break;
+//     } else break;
+//   }
+//   if (prefix == "") {
+//     console.log(`${word} + "way"`);
+//   }
+//   if (prefix.length == 1) console.log(`${word.substring(1) + prefix + "ay"}`);
+//   else console.log(`${word.substring(2) + prefix + "ay"}`);
+// }
+
+// piglatinate(piglatinWord, vowels);
+
+let binaryAgent =
+  "01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111";
+
+function printBinaryText(x) {
+  var toPrint = "";
+  var currentPrint = "";
+  for (i = 0; i < x.length; i++) {
+    if (x[i] != " ") {
+      toPrint += x[i];
+    } else {
+      currentPrint += String.fromCharCode(parseInt(toPrint, 2));
+      toPrint = "";
+    }
+  }
+  console.log(currentPrint);
+}
+
+printBinaryText(binaryAgent);
