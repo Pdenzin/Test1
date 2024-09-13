@@ -2126,34 +2126,34 @@
 //   "z",
 // ];
 
-// let alphabetUpper = [
-//   "A",
-//   "B",
-//   "C",
-//   "D",
-//   "E",
-//   "F",
-//   "G",
-//   "H",
-//   "I",
-//   "J",
-//   "K",
-//   "L",
-//   "M",
-//   "N",
-//   "O",
-//   "P",
-//   "Q",
-//   "R",
-//   "S",
-//   "T",
-//   "U",
-//   "V",
-//   "W",
-//   "X",
-//   "Y",
-//   "Z",
-// ];
+let alphabetUpper = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
 
 // theWord = "BananaAAA";
 
@@ -2261,21 +2261,77 @@
 
 // piglatinate(piglatinWord, vowels);
 
-let binaryAgent =
-  "01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111";
+// let binaryAgent =
+//   "01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111";
 
-function printBinaryText(x) {
-  var toPrint = "";
-  var currentPrint = "";
-  for (i = 0; i < x.length; i++) {
-    if (x[i] != " ") {
-      toPrint += x[i];
-    } else {
-      currentPrint += String.fromCharCode(parseInt(toPrint, 2));
-      toPrint = "";
-    }
-  }
-  console.log(currentPrint);
-}
+// function printBinaryText(x) {
+//   var toPrint = "";
+//   var currentPrint = "";
+//   for (i = 0; i < x.length; i++) {
+//     if (x[i] != " ") {
+//       toPrint += x[i];
+//     } else {
+//       currentPrint += String.fromCharCode(parseInt(toPrint, 2));
+//       toPrint = "";
+//     }
+//   }
+//   console.log(currentPrint);
+// }
 
-printBinaryText(binaryAgent);
+// printBinaryText(binaryAgent);
+
+//Flatten a nested array. You must account for varying levels of nesting.Waiting: steamrollArray([[["a"]], [["b"]]]) should return ["a", "b"]
+// const array28 = [0, 1, [2, [3, [4, 5]]]];
+// console.log(array28.flat(Infinity));
+
+// let DNA_Array = "CGATTA";
+
+// function DNASOLVER(dna) {
+//   let new_array = [];
+//   let couplet = [];
+//   for (i = 0; i < dna.length; i++) {
+//     couplet.push(dna[i]);
+//     if (i % 2 != 0) {
+//       new_array.push(couplet);
+//       couplet = [];
+//     }
+//   }
+//   console.log(new_array);
+// }
+
+// DNASOLVER(DNA_Array);
+
+// let randlet = alphabetUpper[Math.floor(Math.random() * 26)];
+
+// console.log(randlet);
+
+// function studentgrade(grade) {
+//   return grade <= 39
+//     ? "F"
+//     : grade <= 49
+//     ? "D"
+//     : grade <= 59
+//     ? "C"
+//     : grade <= 69
+//     ? "B"
+//     : "A";
+// }
+
+// console.log(studentgrade(55));
+
+// let number1 = 2;
+// let array29 = [1, 3, 5, 7, 8, 2, 10];
+// let emptyArray2 = [];
+
+// function findDiff(number, array) {
+//   array.sort((a, b) => a - b);
+//   console.log(array);
+//   for (i = 0; i <= array.length; i++) {
+//     if (array[i + 1] - array[i] == number) {
+//       emptyArray2.push(array[i], array[i + 1]);
+//     }
+//   }
+//   console.log(emptyArray2);
+// }
+
+// findDiff(number1, array29);
