@@ -2362,3 +2362,100 @@ let alphabetUpper = [
 // });
 
 // console.log(shareholders);
+
+//Object class = Object.values
+
+// const bill1 = {
+//   bills: [
+//     {
+//       congress: 117,
+//       latestAction: {
+//         actionDate: "2022-04-06",
+//         text: "Became Public Law No: 117-108.",
+//       },
+//       number: "3076",
+//       originChamber: "House",
+//       originChamberCode: "H",
+//       title: "Postal Service Reform Act of 2022",
+//       type: "HR",
+//       updateDate: "2022-09-29",
+//       updateDateIncludingText: "2022-09-29T03:27:05Z",
+//       url: "https://api.congress.gov/v3/bill/117/hr/3076?format=json",
+//     },
+//     {
+//       congress: 117,
+//       latestAction: {
+//         actionDate: "2022-04-06",
+//         text: "Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 343.",
+//       },
+//       number: "3599",
+//       originChamber: "House",
+//       originChamberCode: "H",
+//       title: "Federal Rotational Cyber Workforce Program Act of 2021",
+//       type: "HR",
+//       updateDate: "2022-09-29",
+//       updateDateIncludingText: "2022-09-29T03:41:50Z",
+//       url: "https://api.congress.gov/v3/bill/117/hr/3599?format=json",
+//     },
+//   ],
+// };
+
+// console.log(bill1.bills[1].latestAction.text);
+
+//Object values, keys, entries
+
+//congress api key NHdJjzbcGyGWRWiqihZ5SH6FZdChkW2fMVOBh5lT
+
+//fetching a congress bill from the api
+
+// async function fetchData() {
+//   try {
+//     const response = await fetch(
+//       "https://api.congress.gov/v3/bill?api_key=NHdJjzbcGyGWRWiqihZ5SH6FZdChkW2fMVOBh5lT&limit=2&format=json"
+//     );
+//     if (response.ok) {
+//       const data = await response.json();
+//       console.log(data.bills[0]);
+//     } else {
+//       console.error(
+//         "Failed to fetch data:",
+//         response.status,
+//         response.statusText
+//       );
+//     }
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
+// }
+
+// // Call the function
+// fetchData();
+
+//objects with json
+
+// const people = [
+//   { name: "Alice", age: 25, pets: ["dog", "cat"] },
+//   { name: "Bob", age: 30, pets: ["snake"] },
+//   { name: "Charlie", age: 35, pets: ["dog"] },
+//   { name: "Diana", age: 28, pets: ["cat"] },
+//   { name: "Eve", age: 22, pets: ["dog", "snake"] },
+//   { name: "Frank", age: 40, pets: ["cat", "dog"] },
+//   { name: "Grace", age: 27, pets: [] },
+// ];
+
+// function mypetcount() {
+//   const petcount = {
+//     dogs: 0,
+//     cats: 0,
+//     snakes: 0,
+//   };
+
+//   people.forEach((person) => {
+//     if (person.pets.includes("dog")) petcount.dogs++;
+//     if (person.pets.includes("cat")) petcount.cats++;
+//     if (person.pets.includes("snake")) petcount.snakes++;
+//   });
+//   return petcount;
+// }
+// const result = mypetcount(people);
+// console.log(result);
