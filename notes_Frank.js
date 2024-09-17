@@ -2335,3 +2335,30 @@ let alphabetUpper = [
 // }
 
 // findDiff(number1, array29);
+
+// let financeArray1 = [{ frank: 50 }, { bob: 20 }, { dada: 200 }];
+
+// let total1 = 400;
+
+// function calculatePercentages(array, total) {
+//   for (i = 0; i < array.length; i++) {
+//     let salary1 = Object.values(array[i]);
+//     array[i].average = (salary1 / total) * 100;
+//   }
+//   console.log(array);
+// }
+
+// calculatePercentages(financeArray1, total1);
+
+// const shareholders = [
+//   { name: "frank", shares: 50 },
+//   { name: "bob", shares: 20 },
+//   { name: "dada", shares: 200 },
+// ];
+
+// const totalShares = 400;
+// shareholders.forEach((shareholder) => {
+//   shareholder.percentage = (shareholder.shares / totalShares) * 100;
+// });
+
+// console.log(shareholders);
