@@ -2459,3 +2459,209 @@ let alphabetUpper = [
 // }
 // const result = mypetcount(people);
 // console.log(result);
+
+let objectArray1 = [
+  {
+    name: "Alice",
+    age: 25,
+    occupation: "Software Developer",
+    address: "123 Maple Street, Springfield, IL",
+    homeOwnership: "Homeowner",
+    pets: [
+      {
+        type: "dog",
+        breed: "Labrador Retriever",
+        age: 5,
+        health: "Healthy",
+        lastVetVisit: "2024-05-10",
+      },
+      {
+        type: "cat",
+        breed: "Siamese",
+        age: 3,
+        health: "Healthy",
+        lastVetVisit: "2024-07-20",
+      },
+    ],
+  },
+  {
+    name: "Bob",
+    age: 30,
+    occupation: "Teacher",
+    address: "456 Oak Avenue, Metropolis, NY",
+    homeOwnership: "Renter",
+    pets: [
+      {
+        type: "snake",
+        breed: "Corn Snake",
+        age: 2,
+        health: "Healthy",
+        lastVetVisit: "2024-06-15",
+      },
+    ],
+  },
+  {
+    name: "Charlie",
+    age: 35,
+    occupation: "Engineer",
+    address: "789 Pine Road, Gotham, NJ",
+    homeOwnership: "Homeowner",
+    pets: [
+      {
+        type: "dog",
+        breed: "German Shepherd",
+        age: 4,
+        health: "Healthy",
+        lastVetVisit: "2024-04-18",
+      },
+    ],
+  },
+  {
+    name: "Diana",
+    age: 28,
+    occupation: "Nurse",
+    address: "101 Birch Lane, Star City, CA",
+    homeOwnership: "Renter",
+    pets: [
+      {
+        type: "cat",
+        breed: "Persian",
+        age: 2,
+        health: "Healthy",
+        lastVetVisit: "2024-08-12",
+      },
+    ],
+  },
+  {
+    name: "Eve",
+    age: 22,
+    occupation: "Student",
+    address: "234 Willow Drive, Central City, KS",
+    homeOwnership: "Renter",
+    pets: [
+      {
+        type: "dog",
+        breed: "Beagle",
+        age: 3,
+        health: "Healthy",
+        lastVetVisit: "2024-09-01",
+      },
+      {
+        type: "snake",
+        breed: "Ball Python",
+        age: 1,
+        health: "Healthy",
+        lastVetVisit: "2024-07-25",
+      },
+    ],
+  },
+  {
+    name: "Frank",
+    age: 40,
+    occupation: "Architect",
+    address: "567 Cedar Boulevard, Coast City, FL",
+    homeOwnership: "Homeowner",
+    pets: [
+      {
+        type: "cat",
+        breed: "Bengal",
+        age: 6,
+        health: "Healthy",
+        lastVetVisit: "2024-03-10",
+      },
+      {
+        type: "snake",
+        breed: "King Snake",
+        age: 4,
+        health: "Healthy",
+        lastVetVisit: "2024-06-22",
+      },
+    ],
+  },
+  {
+    name: "Grace",
+    age: 27,
+    occupation: "Freelance Writer",
+    address: "890 Spruce Circle, Keystone City, CO",
+    homeOwnership: "Renter",
+    pets: [],
+  },
+];
+
+// let inputOA1 = "Eve";
+// let newOccupation = "Engineer";
+// let newAddress = "100 Willow Drive, Kansas City, MO";
+
+// function updateOccupation(array, input, occupation1, address1) {
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i].name == input) {
+//       array[i].occupation = occupation1;
+//       array[i].address = address1;
+//       console.log(array[i]);
+//     }
+//   }
+// }
+
+// updateOccupation(objectArray1, inputOA1, newOccupation, newAddress);
+
+// let inputOA1 = "Grace";
+// let newMaritalStatus = "unmarried";
+
+// function updateOccupation(array, input, maritalStatus1) {
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i].name == input) {
+//       if (array[i].maritalStatus == null) {
+//         array[i].maritalStatus = maritalStatus1;
+//         console.log(array[i]);
+//       }
+//     }
+//   }
+// }
+
+// updateOccupation(objectArray1, inputOA1, newMaritalStatus);
+
+// function updateOccupation(array) {
+//   for (i = 0; i < array.length; i++) {
+//     array[i].maritalStatus = "";
+//     console.log(array[i]);
+//   }
+// }
+
+// updateOccupation(objectArray1);
+
+// let array20s = [];
+// let array30s = [];
+// let array40s = [];
+
+// function sortByAge(array, age1, age2, age3) {
+//   for (i = 0; i < objectArray1.length; i++) {
+//     if (array[i].age < 30) {
+//       age1.push(array[i]);
+//     }
+//     if (array[i].age > 29 && array[i].age < 40) {
+//       age2.push(array[i]);
+//     }
+//     if (array[i].age > 39 && array[i].age < 50) {
+//       age3.push(array[i]);
+//     }
+//   }
+//   console.log(age1, age2, age3);
+// }
+// sortByAge(objectArray1, array20s, array30s, array40s);
+
+function groupByAge(data) {
+  const ageGroup18To30 = [];
+  const ageGroup31To70 = [];
+
+  data.forEach((person) => {
+    if (person.age >= 18 && person.age <= 30) {
+      ageGroup18To30.push(person);
+    } else if (person.age >= 31 && person.age <= 70) {
+      ageGroup31To70.push(person);
+    }
+  });
+
+  return { ageGroup18To30, ageGroup31To70 };
+}
+
+console.log(groupByAge(objectArray1));
