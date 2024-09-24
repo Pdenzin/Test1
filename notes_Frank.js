@@ -2649,19 +2649,61 @@ let objectArray1 = [
 // }
 // sortByAge(objectArray1, array20s, array30s, array40s);
 
-function groupByAge(data) {
-  const ageGroup18To30 = [];
-  const ageGroup31To70 = [];
+// function groupByAge(data) {
+//   const ageGroup18To30 = [];
+//   const ageGroup31To70 = [];
 
+//   data.forEach((person) => {
+//     if (person.age >= 18 && person.age <= 30) {
+//       ageGroup18To30.push(person);
+//     } else if (person.age >= 31 && person.age <= 70) {
+//       ageGroup31To70.push(person);
+//     }
+//   });
+
+//   return { ageGroup18To30, ageGroup31To70 };
+// }
+
+// console.log(groupByAge(objectArray1));
+
+// function petchecker(data) {
+//   data.forEach((person) => {
+//     if (person.pets == "") {
+//       let randomNumber = Math.floor(Math.random() * 3);
+//       person.pets = [];
+//       let newObject2 = {};
+//       if (randomNumber == 0) newObject2.type = "Rabbit";
+//       if (randomNumber == 1) newObject2.type = "Snake";
+//       if (randomNumber == 2) newObject2.type = "Dog";
+//       newObject2.breed = "Unknown";
+//       newObject2.age = 5;
+//       newObject2.health = "Healthy";
+//       newObject2.lastVetVisit = "Unknown";
+//       person.pets.push(newObject2);
+//     }
+//   });
+//   return data;
+// }
+
+// petchecker(objectArray1);
+
+// function countpets(data) {
+//   data.forEach((person) => {
+//     person.numberOfPets = person.pets.length;
+//   });
+//   return data;
+// }
+
+// console.log(countpets(objectArray1));
+
+function correctCountPetsforFrank(data) {
+  let newObject3 = {};
   data.forEach((person) => {
-    if (person.age >= 18 && person.age <= 30) {
-      ageGroup18To30.push(person);
-    } else if (person.age >= 31 && person.age <= 70) {
-      ageGroup31To70.push(person);
-    }
+    let nameofPerson = "";
+    nameofPerson = person.name;
+    newObject3[nameofPerson] = person.pets.length;
   });
-
-  return { ageGroup18To30, ageGroup31To70 };
+  return newObject3;
 }
 
-console.log(groupByAge(objectArray1));
+console.log(correctCountPetsforFrank(objectArray1));
